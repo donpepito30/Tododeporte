@@ -350,7 +350,7 @@ export default function FeaturedMatch({ match, onWatchLive }: FeaturedMatchProps
             {/* Side-by-side Sponsor Ad Block */}
             <div 
               onClick={() => {
-                window.open('https://www.effectivecpmnetwork.com/adfm7su20v?key=608c60036c0fc858d149cec4725243ef', '_blank', 'noopener,noreferrer');
+                window.open('https://zonadeportiva-plus.app/', '_blank', 'noopener,noreferrer');
               }}
               className="md:col-span-4 flex flex-col justify-between bg-slate-950/60 hover:bg-slate-900/60 border border-slate-800 hover:border-yellow-450 rounded-2xl p-4 relative overflow-hidden group/ad cursor-pointer select-none transition-all duration-300 min-h-[220px]"
             >

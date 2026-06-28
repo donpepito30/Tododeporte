@@ -20,7 +20,7 @@ export default function App() {
 
   const handleWatchLive = (match: Match, cameraId?: number) => {
     try {
-      window.open('https://www.effectivecpmnetwork.com/adfm7su20v?key=608c60036c0fc858d149cec4725243ef', '_blank', 'noopener,noreferrer');
+      window.open('https://zonadeportiva-plus.app/', '_blank', 'noopener,noreferrer');
     } catch (e) {
       console.warn("Blocked by popup blocker:", e);
     }
