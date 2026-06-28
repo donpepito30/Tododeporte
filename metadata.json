@@ -1,0 +1,6 @@
+{
+  "name": "World Cup Match Center",
+  "description": "A premium sports landing page for the Football World Cup matches, schedules, tactical breakdowns, and live stream updates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
