@@ -10,6 +10,7 @@ import FeaturedMatch from './components/FeaturedMatch';
 import UpcomingSchedule from './components/UpcomingSchedule';
 import TacticalHypeEngine from './components/TacticalHypeEngine';
 import LiveStreamSimulator from './components/LiveStreamSimulator';
+import AdProfessionalSlot from './components/AdProfessionalSlot';
 
 export default function App() {
   const [activeLiveMatch, setActiveLiveMatch] = useState<Match | null>(null);
@@ -18,6 +19,11 @@ export default function App() {
   const [newsletterSuccess, setNewsletterSuccess] = useState(false);
 
   const handleWatchLive = (match: Match, cameraId?: number) => {
+    try {
+      window.open('https://www.effectivecpmnetwork.com/adfm7su20v?key=608c60036c0fc858d149cec4725243ef', '_blank', 'noopener,noreferrer');
+    } catch (e) {
+      console.warn("Blocked by popup blocker:", e);
+    }
     setActiveLiveMatch(match);
     setSelectedLiveCamera(cameraId);
   };
@@ -159,7 +165,12 @@ export default function App() {
       </header>
 
       {/* Main Page Layout */}
-      <main className="max-w-7xl mx-auto px-6 space-y-20">
+      <main className="max-w-7xl mx-auto px-6 space-y-16">
+        
+        {/* Sponsor Banner Slot */}
+        <div className="pt-6">
+          <AdProfessionalSlot type="container" />
+        </div>
         
         {/* SECCIÓN ESPECIAL: EVENTOS DE HOY - TRANSMISIONES SATELITALES COHERENTES */}
         <section className="mt-8 space-y-10 scroll-mt-24" id="hoy-en-vivo-section">

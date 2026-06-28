@@ -2,6 +2,7 @@ import { useState, useEffect, useRef, FormEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Send, Users, ShieldAlert, Award, Play, Activity, MessageSquare, ListCollapse, AlignJustify } from 'lucide-react';
 import { Match, ChatMessage, CommentaryEvent } from '../types';
+import AdProfessionalSlot from './AdProfessionalSlot';
 
 interface LiveStreamSimulatorProps {
   match: Match;
@@ -840,6 +841,11 @@ export default function LiveStreamSimulator({ match, onClose, initialCameraId }:
               </div>
             )}
 
+          </div>
+
+          {/* Ad banner integration */}
+          <div className="px-4">
+            <AdProfessionalSlot type="banner" />
           </div>
 
           {/* Prompt info */}
