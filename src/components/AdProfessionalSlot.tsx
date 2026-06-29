@@ -37,7 +37,7 @@ export default function AdProfessionalSlot({ type }: AdProfessionalSlotProps) {
       // 1. Create the container div
       const containerDiv = document.createElement('div');
       containerDiv.id = 'container-2d18609577a0d05dd55ea280d780113f';
-      containerDiv.className = 'w-full flex items-center justify-center min-h-[80px]';
+      containerDiv.className = 'w-full flex items-center justify-center min-h-[45px]';
       adRef.current.appendChild(containerDiv);
 
       // 2. Create the invoke script
@@ -51,11 +51,11 @@ export default function AdProfessionalSlot({ type }: AdProfessionalSlotProps) {
   }, [type]);
 
   return (
-    <div className="w-full flex flex-col items-center justify-center my-4 p-2 bg-slate-900/30 border border-slate-800/40 rounded-xl max-w-full overflow-hidden">
-      <div className="text-[9px] font-mono text-slate-500 uppercase tracking-widest mb-1.5 select-none">
-        Publicidad Patrocinada • Sponsor Ad
+    <div className="w-full flex flex-col items-center justify-center my-1.5 p-1 bg-slate-900/20 border border-slate-800/25 rounded-xl max-w-full overflow-hidden">
+      <div className="text-[7px] sm:text-[8px] font-mono text-slate-500 uppercase tracking-widest mb-0.5 select-none">
+        Publicidad Patrocinada
       </div>
-      <div ref={adRef} className="w-full flex items-center justify-center overflow-hidden min-h-[60px]" />
+      <div ref={adRef} className="w-full flex items-center justify-center overflow-hidden min-h-[45px]" />
     </div>
   );
 }

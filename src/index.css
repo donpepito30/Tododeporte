@@ -53,6 +53,24 @@
   }
 }
 
+/* Red Live Glowing CTA Pulse Style with intense depth */
+.btn-live-pulse-red {
+  position: relative;
+  animation: live-pulse-red-anim 1.8s infinite cubic-bezier(0.4, 0, 0.6, 1);
+  box-shadow: 0 0 15px rgba(239, 68, 68, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 10px 20px -5px rgba(239, 68, 68, 0.4);
+}
+
+@keyframes live-pulse-red-anim {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 12px rgba(239, 68, 68, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 8px 16px -4px rgba(239, 68, 68, 0.4);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(239, 68, 68, 0.85), inset 0 1.5px 0 rgba(255, 255, 255, 0.55), 0 12px 24px -2px rgba(239, 68, 68, 0.5);
+  }
+}
+
 /* Dynamic gradient shift */
 .gradient-bg-triadic {
   background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(88, 28, 135, 0.2) 50%, rgba(8, 51, 68, 0.3) 100%);

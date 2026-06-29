@@ -165,10 +165,181 @@ export default function App() {
       </header>
 
       {/* Main Page Layout */}
-      <main className="max-w-7xl mx-auto px-6 space-y-16">
+      <main className="max-w-7xl mx-auto px-6 space-y-12 pt-6">
+
+        {/* PROMOTIONAL MAIN IMAGE BANNER */}
+        <div 
+          onClick={() => {
+            window.open('https://zonadeportiva-plus.app/', '_blank', 'noopener,noreferrer');
+          }}
+          className="relative w-full rounded-3xl overflow-hidden border border-red-500/35 hover:border-red-500/60 bg-slate-950 cursor-pointer shadow-2xl hover:shadow-red-500/10 transition-all duration-500 group select-none flex flex-col md:flex-row md:items-center md:min-h-[360px]"
+        >
+          {/* Main Background Image Container */}
+          <div className="w-full md:absolute md:inset-0 z-0 h-auto aspect-[16/9] md:aspect-auto md:h-full overflow-hidden">
+            <img 
+              src="https://i.ibb.co/Y7t7LB2L/Chat-GPT-Image-29-jun-2026-09-53-13.png" 
+              alt="Transmisión Exclusiva Zona Deportiva" 
+              referrerPolicy="no-referrer"
+              className="w-full h-full object-cover object-center opacity-100 group-hover:scale-[1.015] transition-transform duration-700"
+            />
+            {/* Soft, professional gradient vignette strictly on desktop behind the floating text */}
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 via-slate-950/40 to-transparent hidden md:block" />
+            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent hidden md:block" />
+          </div>
+
+          {/* Banner Content (Beautifully positioned below the image on mobile to fully expose the image, and floating gracefully on desktop) */}
+          <div className="relative z-10 p-4 sm:p-6 md:p-8 max-w-lg text-left pointer-events-none w-full md:ml-8 lg:ml-12">
+            <div className="bg-slate-900/95 md:bg-slate-950/85 md:backdrop-blur-md border border-slate-800/80 p-5 sm:p-6 md:p-8 rounded-2xl space-y-3 sm:space-y-4 shadow-2xl pointer-events-auto">
+              {/* Live Indicator */}
+              <div className="flex items-center gap-2">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                </span>
+                <span className="text-[9px] font-mono text-red-400 font-extrabold uppercase tracking-widest bg-red-950/60 px-2 py-0.5 rounded border border-red-500/20">
+                  SEÑAL PREMIUM ACTIVA
+                </span>
+              </div>
+
+              {/* Typography headings */}
+              <div className="space-y-1">
+                <h1 className="text-xl sm:text-2xl font-display font-black text-white leading-tight tracking-tight">
+                  ZONA DEPORTIVA <span className="text-red-500">PLUS</span>
+                </h1>
+                <p className="text-slate-300 text-xs leading-relaxed font-medium">
+                  Accede de forma directa a todas las transmisiones exclusivas, canales satelitales en alta definición y partidos de hoy sin interrupciones.
+                </p>
+              </div>
+
+              {/* Interactive Call-to-action button inside image */}
+              <div className="pt-1.5">
+                <button 
+                  className="btn-live-pulse-red w-full flex items-center justify-center gap-2 bg-gradient-to-r from-red-600 via-red-500 to-amber-500 hover:from-red-500 hover:via-red-400 hover:to-amber-400 text-white border-2 border-white px-5 py-2.5 sm:py-3 rounded-xl text-xs font-display font-black transition-all duration-300 shadow-2xl cursor-pointer"
+                >
+                  <Play className="w-3.5 h-3.5 fill-white animate-pulse" />
+                  <span>VER TRANSMISIÓN VIP EN VIVO</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Premium Bottom Sponsor Label */}
+          <div className="absolute bottom-4 right-4 z-10 hidden md:flex items-center gap-1.5 bg-slate-950/90 px-3 py-1.5 rounded-lg border border-slate-800/80 text-[9px] font-mono text-slate-400 uppercase tracking-wider">
+            <span>Auspiciador Oficial</span>
+            <span className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
+            <span className="text-yellow-400 font-bold">CLICK AQUÍ</span>
+          </div>
+        </div>
+
+        {/* ADDITIONAL PROMOTIONAL BANNERS GRID */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+          {/* Banner 2 */}
+          <div 
+            onClick={() => {
+              window.open('https://zonadeportiva-plus.app/', '_blank', 'noopener,noreferrer');
+            }}
+            className="relative w-full rounded-3xl overflow-hidden border border-red-500/30 hover:border-red-500/50 bg-slate-950 cursor-pointer shadow-xl hover:shadow-red-500/5 transition-all duration-500 group select-none flex flex-col md:min-h-[280px]"
+          >
+            {/* Background Image Container */}
+            <div className="w-full h-auto aspect-[16/9] md:absolute md:inset-0 z-0 md:h-full overflow-hidden">
+              <img 
+                src="https://i.ibb.co/LXLMYP6b/Chat-GPT-Image-29-jun-2026-09-55-35.png" 
+                alt="Transmisión VIP Señal 1" 
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover object-center opacity-100 group-hover:scale-[1.015] transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent hidden md:block" />
+            </div>
+
+            {/* Banner Content (Structured below image on mobile to fully expose the image) */}
+            <div className="relative z-10 p-4 sm:p-5 text-left pointer-events-none mt-auto w-full">
+              <div className="bg-slate-900/95 md:bg-slate-950/85 md:backdrop-blur-md border border-slate-800/80 p-4 rounded-2xl space-y-2 pointer-events-auto">
+                <div className="flex items-center gap-2">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                  </span>
+                  <span className="text-[9px] font-mono text-red-400 font-extrabold uppercase tracking-widest bg-red-950/60 px-2 py-0.5 rounded border border-red-500/20">
+                    CANAL SATELITAL VIP #1
+                  </span>
+                </div>
+
+                <div className="space-y-1">
+                  <h3 className="text-lg font-display font-black text-white leading-tight">
+                    SEÑAL ESTRELLA EN VIVO
+                  </h3>
+                  <p className="text-slate-300 text-[11px] leading-relaxed">
+                    Transmisión directa y análisis táctico en tiempo real sin retrasos ni cortes publicitarios.
+                  </p>
+                </div>
+
+                <div className="pt-1">
+                  <button 
+                    className="btn-live-pulse-red w-full flex items-center justify-center gap-1.5 bg-gradient-to-r from-red-600 via-red-500 to-amber-500 hover:from-red-500 hover:via-red-400 hover:to-amber-400 text-white border-2 border-white py-2 px-4 rounded-xl text-xs font-display font-black transition-all duration-300 shadow-2xl cursor-pointer"
+                  >
+                    <Play className="w-3 h-3 fill-white animate-pulse" />
+                    <span>CONECTAR SEÑAL VIP</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Banner 3 */}
+          <div 
+            onClick={() => {
+              window.open('https://zonadeportiva-plus.app/', '_blank', 'noopener,noreferrer');
+            }}
+            className="relative w-full rounded-3xl overflow-hidden border border-red-500/30 hover:border-red-500/50 bg-slate-950 cursor-pointer shadow-xl hover:shadow-red-500/5 transition-all duration-500 group select-none flex flex-col md:min-h-[280px]"
+          >
+            {/* Background Image Container */}
+            <div className="w-full h-auto aspect-[16/9] md:absolute md:inset-0 z-0 md:h-full overflow-hidden">
+              <img 
+                src="https://i.ibb.co/p6KG0phn/Chat-GPT-Image-29-jun-2026-10-07-51.png" 
+                alt="Transmisión VIP Señal 2" 
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover object-center opacity-100 group-hover:scale-[1.015] transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent hidden md:block" />
+            </div>
+
+            {/* Banner Content (Structured below image on mobile to fully expose the image) */}
+            <div className="relative z-10 p-4 sm:p-5 text-left pointer-events-none mt-auto w-full">
+              <div className="bg-slate-900/95 md:bg-slate-950/85 md:backdrop-blur-md border border-slate-800/80 p-4 rounded-2xl space-y-2 pointer-events-auto">
+                <div className="flex items-center gap-2">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                  </span>
+                  <span className="text-[9px] font-mono text-red-400 font-extrabold uppercase tracking-widest bg-red-950/60 px-2 py-0.5 rounded border border-red-500/20">
+                    COBERTURA GLOBAL HD
+                  </span>
+                </div>
+
+                <div className="space-y-1">
+                  <h3 className="text-lg font-display font-black text-white leading-tight">
+                    MULTICENTRO DE TRANSMISIÓN
+                  </h3>
+                  <p className="text-slate-300 text-[11px] leading-relaxed">
+                    Disfruta de la mejor calidad de transmisión desde cualquier dispositivo y en cualquier lugar del mundo.
+                  </p>
+                </div>
+
+                <div className="pt-1">
+                  <button 
+                    className="btn-live-pulse-red w-full flex items-center justify-center gap-1.5 bg-gradient-to-r from-red-600 via-red-500 to-amber-500 hover:from-red-500 hover:via-red-400 hover:to-amber-400 text-white border-2 border-white py-2 px-4 rounded-xl text-xs font-display font-black transition-all duration-300 shadow-2xl cursor-pointer"
+                  >
+                    <Play className="w-3 h-3 fill-white animate-pulse" />
+                    <span>CONECTAR AHORA HD</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         
         {/* Sponsor Banner Slot */}
-        <div className="pt-6">
+        <div className="pt-2">
           <AdProfessionalSlot type="container" />
         </div>
         
