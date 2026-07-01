@@ -177,8 +177,8 @@ export default function App() {
           {/* Main Background Image Container */}
           <div className="w-full md:absolute md:inset-0 z-0 h-auto aspect-[16/9] md:aspect-auto md:h-full overflow-hidden">
             <img 
-              src="https://i.ibb.co/Y7t7LB2L/Chat-GPT-Image-29-jun-2026-09-53-13.png" 
-              alt="Transmisión Exclusiva Zona Deportiva" 
+              src="https://i.ibb.co/5WH7ysNc/Chat-GPT-Image-30-jun-2026-20-10-40.png" 
+              alt="Evento Estrella Zona Deportiva" 
               referrerPolicy="no-referrer"
               className="w-full h-full object-cover object-center opacity-100 group-hover:scale-[1.015] transition-transform duration-700"
             />
@@ -197,7 +197,7 @@ export default function App() {
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
                 </span>
                 <span className="text-[9px] font-mono text-red-400 font-extrabold uppercase tracking-widest bg-red-950/60 px-2 py-0.5 rounded border border-red-500/20">
-                  SEÑAL PREMIUM ACTIVA
+                  EVENTO EXCLUSIVO DE HOY
                 </span>
               </div>
 
@@ -207,7 +207,7 @@ export default function App() {
                   ZONA DEPORTIVA <span className="text-red-500">PLUS</span>
                 </h1>
                 <p className="text-slate-300 text-xs leading-relaxed font-medium">
-                  Accede de forma directa a todas las transmisiones exclusivas, canales satelitales en alta definición y partidos de hoy sin interrupciones.
+                  Sigue la transmisión oficial en alta definición con señal satelital premium. Acceso directo sin cortes.
                 </p>
               </div>
 
@@ -232,7 +232,59 @@ export default function App() {
         </div>
 
         {/* ADDITIONAL PROMOTIONAL BANNERS GRID */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+          {/* Banner 1 (Moved here) */}
+          <div 
+            onClick={() => {
+              window.open('https://zonadeportiva-plus.app/', '_blank', 'noopener,noreferrer');
+            }}
+            className="relative w-full rounded-3xl overflow-hidden border border-red-500/30 hover:border-red-500/50 bg-slate-950 cursor-pointer shadow-xl hover:shadow-red-500/5 transition-all duration-500 group select-none flex flex-col md:min-h-[280px]"
+          >
+            {/* Background Image Container */}
+            <div className="w-full h-auto aspect-[16/9] md:absolute md:inset-0 z-0 md:h-full overflow-hidden">
+              <img 
+                src="https://i.ibb.co/Y7t7LB2L/Chat-GPT-Image-29-jun-2026-09-53-13.png" 
+                alt="Transmisión VIP Señal Premium" 
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover object-center opacity-100 group-hover:scale-[1.015] transition-transform duration-700"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent hidden md:block" />
+            </div>
+
+            {/* Banner Content */}
+            <div className="relative z-10 p-4 sm:p-5 text-left pointer-events-none mt-auto w-full">
+              <div className="bg-slate-900/95 md:bg-slate-950/85 md:backdrop-blur-md border border-slate-800/80 p-4 rounded-2xl space-y-2 pointer-events-auto">
+                <div className="flex items-center gap-2">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+                  </span>
+                  <span className="text-[9px] font-mono text-red-400 font-extrabold uppercase tracking-widest bg-red-950/60 px-2 py-0.5 rounded border border-red-500/20">
+                    SEÑAL PREMIUM ACTIVA
+                  </span>
+                </div>
+
+                <div className="space-y-1">
+                  <h3 className="text-lg font-display font-black text-white leading-tight">
+                    ZONA DEPORTIVA PLUS
+                  </h3>
+                  <p className="text-slate-300 text-[11px] leading-relaxed">
+                    Acceso rápido y fluido a todas las transmisiones en vivo del momento.
+                  </p>
+                </div>
+
+                <div className="pt-1">
+                  <button 
+                    className="btn-live-pulse-red w-full flex items-center justify-center gap-1.5 bg-gradient-to-r from-red-600 via-red-500 to-amber-500 hover:from-red-500 hover:via-red-400 hover:to-amber-400 text-white border-2 border-white py-2 px-4 rounded-xl text-xs font-display font-black transition-all duration-300 shadow-2xl cursor-pointer"
+                  >
+                    <Play className="w-3 h-3 fill-white animate-pulse" />
+                    <span>VER SEÑAL PRINCIPAL</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Banner 2 */}
           <div 
             onClick={() => {
@@ -269,7 +321,7 @@ export default function App() {
                     SEÑAL ESTRELLA EN VIVO
                   </h3>
                   <p className="text-slate-300 text-[11px] leading-relaxed">
-                    Transmisión directa y análisis táctico en tiempo real sin retrasos ni cortes publicitarios.
+                    Transmisión directa y análisis táctico en tiempo real sin retrasos ni cortes.
                   </p>
                 </div>
 
@@ -321,7 +373,7 @@ export default function App() {
                     MULTICENTRO DE TRANSMISIÓN
                   </h3>
                   <p className="text-slate-300 text-[11px] leading-relaxed">
-                    Disfruta de la mejor calidad de transmisión desde cualquier dispositivo y en cualquier lugar del mundo.
+                    Disfruta de la mejor calidad de transmisión desde cualquier lugar del mundo.
                   </p>
                 </div>
 
